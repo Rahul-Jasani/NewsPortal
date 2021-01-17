@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Preferences</h1>
+    <p class="article-content">Select the news topics you are interested in.</p>
+    <form action="" method="POST">
+        <fieldset class="form-group">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-light">	
+                    <div class="form-check">
+                        {{ form.category1(class="form-check-input") }}
+                        {{ form.category1.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category2(class="form-check-input") }}
+                        {{ form.category2.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category3(class="form-check-input") }}
+                        {{ form.category3.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category4(class="form-check-input") }}
+                        {{ form.category4.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category5(class="form-check-input") }}
+                        {{ form.category5.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category6(class="form-check-input") }}
+                        {{ form.category6.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category7(class="form-check-input") }}
+                        {{ form.category7.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category8(class="form-check-input") }}
+                        {{ form.category8.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category9(class="form-check-input") }}
+                        {{ form.category9.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category10(class="form-check-input") }}
+                        {{ form.category10.label(class="form-check-label") }}
+                    </div>
+                </li>
+                <li class="list-group-item list-group-item-light">
+                    <div class="form-check">
+                        {{ form.category11(class="form-check-input") }}
+                        {{ form.category11.label(class="form-check-label") }}
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-secondary btn-sm") }}
+        </div>
+    </form>
+{% endblock content %}

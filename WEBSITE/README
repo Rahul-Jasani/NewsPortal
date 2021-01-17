@@ -1,0 +1,7 @@
+NOTE: '$' indicates bash command.
+$ python3.7 -m venv .venv
+$ source .venv/bin/activate
+$ pip install --upgrade pip
+$ pip install -r requirements.txt
+$ cd site/
+$ python app.py

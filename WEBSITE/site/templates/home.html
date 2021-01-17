@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" target="_blank" href={{ post.link }}>{{ post.source }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" target="_blank" href={{ post.link }}>{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
+{% block calendar %}
+  <div class="content-section">
+    <p class='text-muted'>Articles since...
+      <div class="form-group">
+        <ul class="list-group">
+        <li class="list-group-item list-group-item-light">
+        <select class="form-control" id="month" name="rating">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        </li>
+        <li class="list-group-item list-group-item-light">
+        <select class="form-control" id="day" name="rating">
+          <option value="2020">1</option>
+          <option value="2021">2</option>
+          <option value="2021">3</option>
+          <option value="2021">4</option>
+          <option value="2021">5</option>
+          <option value="2021">6</option>
+          <option value="2021">7</option>
+          <option value="2021">8</option>
+          <option value="2021">9</option>
+          <option value="2021">10</option>
+          <option value="2021">11</option>
+          <option value="2021">12</option>
+          <option value="2021">13</option>
+          <option value="2021">14</option>
+          <option value="2021">15</option>
+          <option value="2021">16</option>
+          <option value="2021">17</option>
+          <option value="2021">18</option>
+          <option value="2021">19</option>
+          <option value="2021">20</option>
+          <option value="2021">21</option>
+          <option value="2021">22</option>
+          <option value="2021">23</option>
+          <option value="2021">24</option>
+          <option value="2021">25</option>
+          <option value="2021">26</option>
+          <option value="2021">27</option>
+          <option value="2021">28</option>
+          <option value="2021">29</option>
+          <option value="2021">30</option>
+          <option value="2021">31</option>
+        </select>
+        </li>
+        <li class="list-group-item list-group-item-light">
+        <select class="form-control" id="year" name="rating">
+          <option value="2021">2021</option>
+        </select>
+        </li>
+        </ul>
+      </div>
+    </p>
+  </div>
+{% endblock calendar %}
