@@ -1,3 +1,7 @@
+#the scraping of the RSS feeds was done with the assistance of the following tutorial: https://codeburst.io/building-an-rss-feed-scraper-with-python-73715ca06e1f
+
+
+
 from DBConnector import DBConnector
 
 #rss scraper for diferent feeds
